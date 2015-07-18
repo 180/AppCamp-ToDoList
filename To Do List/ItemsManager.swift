@@ -16,9 +16,7 @@ struct item {
 }
 
 class ItemsManager : NSObject {
-    
-    var items = [item]() // Variable holding an array of tasks initialized with noting
-    
+    var items = [item]() // Variable holding an array of items initialized with noting
     func addItem(name: String, details: String) {
         items.append(item(name: name, details: details))
     }
