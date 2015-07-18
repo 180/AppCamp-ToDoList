@@ -27,6 +27,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
     }
 
+    // TableView Delegate
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemsMgr.items.count
     }
@@ -38,6 +40,15 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.detailTextLabel?.text = itemsMgr.items[indexPath.row].details
         
         return cell
+    }
+    
+    // Swipe to delete
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if (editingStyle == UITableViewCellEditingStyle.Delete) {
+            itemsMgr.items.removeAtIndex(indexPath.row);
+            itemsTableView.reloadData()
+        }
         
     }
 
