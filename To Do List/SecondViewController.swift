@@ -20,6 +20,11 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        self.view.endEditing(true)  // hiding keyboard
+        
+    }
+    
     
     // TextField Delegate
     func textFieldShouldReturn(textField: UITextField) -> Bool {
