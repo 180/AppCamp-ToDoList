@@ -9,6 +9,9 @@
 import UIKit
 
 class SecondViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet weak var itemLabel: UITextField! // Use exclamation mark when declaring something that don't exists at the moment
+    @IBOutlet weak var detailsLabel: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +27,13 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)  // hiding keyboard
         
     }
+    
+    // Actions
+    @IBAction func AddButtonTapped(sender: UIButton) {
+        
+        println("Button tapped")
+    }
+    
     
     
     // TextField Delegate
