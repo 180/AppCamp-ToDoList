@@ -10,8 +10,8 @@ import UIKit
 
 class SecondViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var itemLabel: UITextField! // Use exclamation mark when declaring something that don't exists at the moment
-    @IBOutlet weak var detailsLabel: UITextField!
+    @IBOutlet weak var itemTextField: UITextField! // Use exclamation mark when declaring something that don't exists at the moment
+    @IBOutlet weak var detailsTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +30,16 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     
     // Actions
     @IBAction func AddButtonTapped(sender: UIButton) {
+        println("Adding item \(itemTextField.text)")
         
-        println("Button tapped")
+        itemsMgr.addItem(itemTextField.text, details: detailsTextField.text)
+        self.view.endEditing(true)
+        itemTextField.text = ""
+        detailsTextField.text = ""
+        
+        // Navigate to List
+        self.tabBarController?.selectedIndex = 0;
+        
     }
     
     
