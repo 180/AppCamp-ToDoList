@@ -14,6 +14,7 @@
 		4E4D29681B5AE2E600EDAEE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E4D29671B5AE2E600EDAEE6 /* Images.xcassets */; };
 		4E4D296B1B5AE2E600EDAEE6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E4D29691B5AE2E600EDAEE6 /* LaunchScreen.xib */; };
 		4E4D29771B5AE2E600EDAEE6 /* To_Do_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D29761B5AE2E600EDAEE6 /* To_Do_ListTests.swift */; };
+		4E4D29811B5AE35000EDAEE6 /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D29801B5AE35000EDAEE6 /* ItemsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		4E4D29701B5AE2E600EDAEE6 /* To Do ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "To Do ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4D29751B5AE2E600EDAEE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E4D29761B5AE2E600EDAEE6 /* To_Do_ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListTests.swift; sourceTree = "<group>"; };
+		4E4D29801B5AE35000EDAEE6 /* ItemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				4E4D295E1B5AE2E600EDAEE6 /* AppDelegate.swift */,
 				4E4D29601B5AE2E600EDAEE6 /* FirstViewController.swift */,
+				4E4D29801B5AE35000EDAEE6 /* ItemsManager.swift */,
 				4E4D29621B5AE2E600EDAEE6 /* SecondViewController.swift */,
 				4E4D29641B5AE2E600EDAEE6 /* Main.storyboard */,
 				4E4D29671B5AE2E600EDAEE6 /* Images.xcassets */,
@@ -217,6 +220,7 @@
 			files = (
 				4E4D29631B5AE2E600EDAEE6 /* SecondViewController.swift in Sources */,
 				4E4D295F1B5AE2E600EDAEE6 /* AppDelegate.swift in Sources */,
+				4E4D29811B5AE35000EDAEE6 /* ItemsManager.swift in Sources */,
 				4E4D29611B5AE2E600EDAEE6 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
