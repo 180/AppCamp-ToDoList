@@ -9,7 +9,7 @@
 import UIKit
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var itemsTableView: UITableView!
     
     override func viewDidLoad() {
@@ -17,7 +17,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Do any additional setup after loading the view, typically from a nib.
         println("1. View Did Load")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -37,16 +37,17 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewWillDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
         println("4. View Will Dissapear")
+
     }
     
-
+    
     // TableView Delegate
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemsMgr.items.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier:"CellId")
         
         cell.textLabel?.text = itemsMgr.items[indexPath.row].name
