@@ -15,6 +15,7 @@
 		4E4D296B1B5AE2E600EDAEE6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E4D29691B5AE2E600EDAEE6 /* LaunchScreen.xib */; };
 		4E4D29771B5AE2E600EDAEE6 /* To_Do_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D29761B5AE2E600EDAEE6 /* To_Do_ListTests.swift */; };
 		4E4D29811B5AE35000EDAEE6 /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D29801B5AE35000EDAEE6 /* ItemsManager.swift */; };
+		4E4D29E81B5B6FAE00EDAEE6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D29E61B5B6FAE00EDAEE6 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		4E4D29751B5AE2E600EDAEE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E4D29761B5AE2E600EDAEE6 /* To_Do_ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListTests.swift; sourceTree = "<group>"; };
 		4E4D29801B5AE35000EDAEE6 /* ItemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
+		4E4D29E71B5B6FAE00EDAEE6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				4E4D295E1B5AE2E600EDAEE6 /* AppDelegate.swift */,
+				4E4D29E61B5B6FAE00EDAEE6 /* Model.xcdatamodeld */,
 				4E4D29601B5AE2E600EDAEE6 /* FirstViewController.swift */,
 				4E4D29801B5AE35000EDAEE6 /* ItemsManager.swift */,
 				4E4D29621B5AE2E600EDAEE6 /* SecondViewController.swift */,
@@ -220,6 +223,7 @@
 			files = (
 				4E4D29631B5AE2E600EDAEE6 /* SecondViewController.swift in Sources */,
 				4E4D295F1B5AE2E600EDAEE6 /* AppDelegate.swift in Sources */,
+				4E4D29E81B5B6FAE00EDAEE6 /* Model.xcdatamodeld in Sources */,
 				4E4D29811B5AE35000EDAEE6 /* ItemsManager.swift in Sources */,
 				4E4D29611B5AE2E600EDAEE6 /* FirstViewController.swift in Sources */,
 			);
@@ -427,6 +431,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4E4D29E61B5B6FAE00EDAEE6 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4E4D29E71B5B6FAE00EDAEE6 /* Model.xcdatamodel */,
+			);
+			currentVersion = 4E4D29E71B5B6FAE00EDAEE6 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4E4D29511B5AE2E600EDAEE6 /* Project object */;
 }
