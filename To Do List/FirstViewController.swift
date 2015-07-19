@@ -15,6 +15,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        println("1. View Did Load")
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,9 +24,21 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         itemsTableView.reloadData()
-        
+        println("2. View Will Appear")
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        println("3. View Did Appear")
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        println("4. View Will Dissapear")
+    }
+    
 
     // TableView Delegate
     
